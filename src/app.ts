@@ -1,4 +1,4 @@
-//validation
+//Validation
 interface Validatable {
   value: string | number;
   required?: boolean;
@@ -43,7 +43,7 @@ function validate(validatebleInput: Validatable) {
   return isValid;
 }
 
-//autobind
+//Autobind
 function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
   const originalMethod = descriptor.value;
   const adjDescriptor: PropertyDescriptor = {
@@ -56,7 +56,7 @@ function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
   return adjDescriptor;
 }
 
-//project list class
+//Project list class
 class ProjectList {
   templateElement: HTMLTemplateElement;
   hostElement: HTMLDivElement;
@@ -90,7 +90,7 @@ class ProjectList {
   }
 }
 
-//project input class
+//Project input class
 class ProjectInput {
   templateElement: HTMLTemplateElement;
   hostElement: HTMLDivElement;
